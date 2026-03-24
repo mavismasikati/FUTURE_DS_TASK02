@@ -25,16 +25,7 @@ The dashboard enables data-driven decisions by visualizing critical KPIs such as
 ## 📝 Conclusion & Impact
 This project successfully transformed a raw dataset of **18K+ records** into a **strategic retention tool**. By calculating a **$29.36M Total Sales benchmark** and identifying a **74% Churn Rate**, the dashboard provides a clear directive for the marketing team:  
 
-> Pivot from broad acquisition to **high-value retention**, specifically targeting the "**At Risk**" segments within the **55-74 age demographics** to stabilize the revenue stream.  
 
----
-
-## 🔮 Future Roadmap *(Optional)*
-* **Predictive Analytics:** Integrate Python models to forecast which specific customers are likely to churn in the next 30 days.  
-* **Live CRM Integration:** Connect to a live CRM to track the ROI of marketing actions proposed in the dashboard.  
-* **Enhanced Metrics:** Add cohort analysis and retention rate tracking to quantify long-term customer loyalty.  
-
-> You can include this section to show strategic thinking, or remove it if you want a cleaner README.
 
 ---
 
