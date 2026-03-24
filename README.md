@@ -1,14 +1,13 @@
-# Customer Retention & Churn Analysis Dashboard
+# Customer Segmentation & Analytics Dashboard
 
 ## 📌 Project Overview
-This project provides a comprehensive analysis of subscription-based customer data to identify churn patterns, retention drivers, and customer lifetime trends. Using **Power BI** and **DAX modeling**, I transformed raw customer data into an **interactive dashboard** to answer critical business questions regarding customer loyalty, retention, and revenue impact.
+This project provides a comprehensive analysis of subscription-based customer data using **RFM (Recency, Frequency, Monetary) customer segmentation**. Using **Power BI** and **DAX modeling**, I transformed raw customer data into an **interactive dashboard** that visualizes key customer metrics and segments. The insights from this dashboard can help inform retention strategies and highlight high-value or at-risk customers.
 
 ## 🚀 Business Questions Answered
-1. **Key Metrics:** Track **Total Customers**, **Churned Customers**, **Churn Rate (%)**, and **Active Customers** with monthly and yearly comparisons.  
-2. **Retention Insights:** Analyze the proportion of **new vs. returning customers** and monitor retention trends over time.  
-3. **Customer Segmentation:** Categorize customers using **RFM (Recency, Frequency, Monetary)** analysis to identify high-value segments.  
-4. **Churn Analysis:** Detect patterns among churned customers to guide proactive retention strategies.  
-5. **Revenue Impact:** Evaluate the financial effect of churn and retention initiatives on overall revenue.
+1. **Customer Segmentation:** Identify high-value, medium, and low-value customers based on RFM scores.  
+2. **Key Metrics Visualization:** Track **Total Customers**, **Churned Customers**, **Churn Rate (%)**, and **Active Customers** using interactive visuals.  
+3. **Customer Demographics:** Explore customer distribution across regions, segments, and purchase behavior.  
+4. **Insights for Retention:** Highlight potentially at-risk customers based on RFM scores to support future retention campaigns.  
 
 ## 🛠️ Tools Used
 * **Power BI:** Dashboard creation, interactive visuals, and **DAX modeling** for calculations.  
@@ -16,11 +15,10 @@ This project provides a comprehensive analysis of subscription-based customer da
 * **GitHub:** Version control and portfolio hosting.
 
 ## 📊 Key Insights
-* **High-Risk Customers:** Identified customers with declining engagement likely to churn, enabling targeted retention campaigns.  
-* **Retention Trends:** Returning customers contribute **~65%** of total revenue, highlighting the importance of loyalty programs.  
-* **Segment Performance:** Premium customers show the highest retention, while occasional subscribers have higher churn rates, guiding marketing strategies.  
-* **Churn Reduction Opportunity:** Understanding churn patterns can reduce customer loss and increase lifetime value.
+* Customers with **low recency and frequency scores** are potentially at risk, guiding where retention efforts could focus.  
+* **High-value customers** (high RFM scores) contribute significantly to revenue and should be prioritized for loyalty programs.  
+* Customer segmentation enables **data-driven decisions** for marketing, promotions, and retention strategies.
 
 ## 📝 Conclusion
-This project demonstrates how **data-driven insights using Power BI and DAX** can improve customer retention and reduce churn. By analyzing key metrics, identifying high-risk customers, and understanding customer segments, businesses can **make informed decisions** to maximize revenue and customer loyalty.  
-The dashboard provides a clear, interactive way to monitor performance over time and take actionable steps for growth.
+This project demonstrates how **RFM-based customer segmentation using Power BI and DAX** can provide actionable insights for businesses. While this dashboard does not calculate full retention or churn rates, it **lays the foundation for understanding customer behavior** and identifying high-value or at-risk segments that can inform future retention strategies.  
+
