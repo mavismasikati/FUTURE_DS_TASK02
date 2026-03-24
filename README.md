@@ -1,48 +1,26 @@
-# 📊 Customer Retention & RFM Segmentation Analysis
-**An End-to-End Power BI Business Intelligence Solution**
+# Customer Retention & Churn Analysis Dashboard
 
----
+## 📌 Project Overview
+This project provides a comprehensive analysis of subscription-based customer data to identify churn patterns, retention drivers, and customer lifetime trends. Using **Power BI** and **DAX modeling**, I transformed raw customer data into an **interactive dashboard** to answer critical business questions regarding customer loyalty, retention, and revenue impact.
 
-## 📖 Project Overview
-This project addresses a critical business challenge: a **74% customer churn rate**. Using **RFM (Recency, Frequency, Monetary) analysis**, I segmented **18.4K customers** to identify high-value "Champions" and develop targeted win-back strategies for "At Risk" segments.  
+## 🚀 Business Questions Answered
+1. **Key Metrics:** Track **Total Customers**, **Churned Customers**, **Churn Rate (%)**, and **Active Customers** with monthly and yearly comparisons.  
+2. **Retention Insights:** Analyze the proportion of **new vs. returning customers** and monitor retention trends over time.  
+3. **Customer Segmentation:** Categorize customers using **RFM (Recency, Frequency, Monetary)** analysis to identify high-value segments.  
+4. **Churn Analysis:** Detect patterns among churned customers to guide proactive retention strategies.  
+5. **Revenue Impact:** Evaluate the financial effect of churn and retention initiatives on overall revenue.
 
-The interactive dashboards provide actionable insights for marketing, retention, and revenue optimization.
+## 🛠️ Tools Used
+* **Power BI:** Dashboard creation, interactive visuals, and **DAX modeling** for calculations.  
+* **Excel / CSV:** Data cleaning, transformation, and preparation.  
+* **GitHub:** Version control and portfolio hosting.
 
----
-
-## 🛠️ Technical Implementation
-- **Data Modeling:** Star Schema for optimized performance and cross-filtering.  
-- **DAX Measures:** Custom calculations for RFM scoring, **Churn Rate %**, **Retention %**, and Active Customer trends.  
-- **Data Visualization:** 4-page interactive dashboard covering **Demographics, RFM Segmentation, Customer Details, and Marketing Actions**.  
-
----
-
-## 📈 Key Dashboard Insights
-- **Customer Demographics:** 60% of total sales ($19.6M) come from customers aged **55-74**, highlighting the value of age-targeted marketing.  
-- **RFM Segmentation:** Categorized 18K+ customers into **11 segments** (e.g., Champions, Loyalists, About to Sleep, At Risk).  
-- **Churn Analysis:** Acquisition is strong (3.2K New Customers) but retention is weak, resulting in a **74% churn rate**.  
-
----
-
-
-## 🧮 Key DAX Measures
-
-**Churn Rate %**
-```DAX
-Churn Rate % =
-VAR TotalCustomers =
-    DISTINCTCOUNT(Customers[CustomerID])
-VAR ChurnedCustomers =
-    CALCULATE(
-        DISTINCTCOUNT(Customers[CustomerID]),
-        Customers[Status] = "Churned"
-    )
-RETURN
-DIVIDE(ChurnedCustomers, TotalCustomers, 0)
+## 📊 Key Insights
+* **High-Risk Customers:** Identified customers with declining engagement likely to churn, enabling targeted retention campaigns.  
+* **Retention Trends:** Returning customers contribute **~65%** of total revenue, highlighting the importance of loyalty programs.  
+* **Segment Performance:** Premium customers show the highest retention, while occasional subscribers have higher churn rates, guiding marketing strategies.  
+* **Churn Reduction Opportunity:** Understanding churn patterns can reduce customer loss and increase lifetime value.
 
 ## 📝 Conclusion
-This project demonstrates how **data-driven insights** can improve customer retention and reduce churn. By analyzing key metrics, identifying high-risk customers, and understanding customer segments, businesses can **make informed decisions** to maximize revenue and loyalty.  
+This project demonstrates how **data-driven insights using Power BI and DAX** can improve customer retention and reduce churn. By analyzing key metrics, identifying high-risk customers, and understanding customer segments, businesses can **make informed decisions** to maximize revenue and customer loyalty.  
 The dashboard provides a clear, interactive way to monitor performance over time and take actionable steps for growth.
-
-## 📬 Contact
-Interested in **leveraging your customer data to reduce churn and improve retention**? Connect with me on **GitHub** or **LinkedIn** to discuss insights and strategies.
