@@ -1,42 +1,56 @@
-# FUTURE_DS_TASK02
-Analyzed 18.4K customers with Power BI and RFM segmentation, revealing a 74% churn rate and high-value segments. Built interactive dashboards with DAX measures, providing actionable insights for retention, revenue growth, and targeted marketing strategies.
-
 # 📊 Customer Retention & RFM Segmentation Analysis
 **An End-to-End Power BI Business Intelligence Solution**
 
 ---
 
 ## 📖 Project Overview
-This project addresses a critical business challenge: a **74% customer churn rate**. By implementing **RFM (Recency, Frequency, Monetary) analysis**, I segmented a database of **18.4K customers** to identify high-value "Champions" and develop targeted win-back strategies for "At Risk" segments. The dashboards provide actionable insights for marketing and business strategy.
+This project addresses a critical business challenge: a **74% customer churn rate**. Using **RFM (Recency, Frequency, Monetary) analysis**, I segmented **18.4K customers** to identify high-value "Champions" and develop targeted win-back strategies for "At Risk" segments.  
+
+The interactive dashboards provide actionable insights for marketing, retention, and revenue optimization.
 
 ---
 
 ## 🛠️ Technical Implementation
-- **Data Modeling:** Designed a **Star Schema** to optimize report performance and cross-filtering.  
-- **DAX Measures:** Developed custom measures for **RFM scoring, Churn Rate %, Retention %, and Active Customer trends**.  
-- **Data Visualization:** Created a **4-page interactive Power BI dashboard** focusing on Demographics, RFM Segmentation, and Prescriptive Marketing Actions.
+- **Data Modeling:** Star Schema for optimized performance and cross-filtering.  
+- **DAX Measures:** Custom calculations for RFM scoring, **Churn Rate %**, **Retention %**, and Active Customer trends.  
+- **Data Visualization:** 4-page interactive dashboard covering **Demographics, RFM Segmentation, Customer Details, and Marketing Actions**.  
 
 ---
 
 ## 📈 Key Dashboard Insights
-- **Customer Demographics:** Customers aged **55-74** contribute **60% of total sales ($19.6M)**, highlighting the value of age-targeted marketing.  
-- **RFM Analysis:** Categorized 18K+ customers into **11 distinct segments** (e.g., Champions, Loyalists, About to Sleep, At Risk).  
-- **The “Churn Signal”:** Acquisition is strong (3.2K New Customers) but retention is weak, resulting in a **74% churn rate**.
+- **Customer Demographics:** 60% of total sales ($19.6M) come from customers aged **55-74**, highlighting the value of age-targeted marketing.  
+- **RFM Segmentation:** Categorized 18K+ customers into **11 segments** (e.g., Champions, Loyalists, About to Sleep, At Risk).  
+- **Churn Analysis:** Acquisition is strong (3.2K New Customers) but retention is weak, resulting in a **74% churn rate**.  
 
 ---
 
-## 💡 Business Recommendations
-**Champions (VIP Treatment):**  
-- Loyalty program with early access to new products to protect the highest revenue stream.  
+## 📸 Dashboard Screenshots
 
-**At Risk (Win-Back):**  
-- Automated re-engagement email campaigns with personalized discounts for customers who haven't purchased in 90+ days.  
+### 1️⃣ Demographics Page
+Displays customer age bands, revenue distribution, and regional sales.  
 
-**New Customers (Onboarding):**  
-- A "Welcome Series" to encourage a second purchase within 30 days, increasing conversion to the "Promising" segment.  
+![Demographics Page](Screenshots/demographics_page.png)  
 
-**About to Sleep:**  
-- Reminder emails or SMS campaigns with urgency messaging to retain customers before they churn.
+---
+
+### 2️⃣ RFM Segmentation Page
+Shows Recency, Frequency, Monetary analysis, and customer segments.  
+
+![RFM Segmentation](Screenshots/rfm_page.png)  
+
+---
+
+### 3️⃣ Customer Details Page
+Contains customer names, emails, and segment info for actionable campaigns.  
+
+![Customer Details](Screenshots/customer_details_page.png)  
+
+---
+
+### 4️⃣ Marketing Actions Page
+Visualizes recommended campaigns for Champions, At Risk, New, and About to Sleep segments.  
+
+![Marketing Actions](Screenshots/marketing_actions_page.png)  
 
 ---
 
@@ -55,15 +69,12 @@ VAR ChurnedCustomers =
 RETURN
 DIVIDE(ChurnedCustomers, TotalCustomers, 0)
 
-Retention Rate % =
-VAR TotalCustomers =
-    DISTINCTCOUNT(Customers[CustomerID])
-VAR ActiveCustomers =
-    CALCULATE(
-        DISTINCTCOUNT(Customers[CustomerID]),
-        Customers[Status] = "Active"
-    )
-RETURN
-DIVIDE(ActiveCustomers, TotalCustomers, 0)
-
-
+📝 Conclusion & Recommendations
+This project demonstrates the ability to analyze large datasets, uncover critical business insights, and drive actionable strategies. Key takeaways and recommendations:
+74% Churn Rate Identified: Highlights urgent retention challenges.
+High-Value Customers: 60% of total revenue comes from ages 55-74; Champions dominate frequency and monetary metrics.
+Actionable Recommendations:
+Champions: VIP loyalty programs to retain top revenue drivers.
+At Risk: Automated win-back campaigns with personalized discounts.
+New Customers: Onboarding “Welcome Series” to increase second purchase rates.
+About to Sleep: Urgency messaging via email/SMS to prevent churn.
