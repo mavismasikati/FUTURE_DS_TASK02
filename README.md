@@ -24,35 +24,6 @@ The interactive dashboards provide actionable insights for marketing, retention,
 
 ---
 
-## 📸 Dashboard Screenshots
-
-### 1️⃣ Demographics Page
-Displays customer age bands, revenue distribution, and regional sales.  
-
-![Demographics Page](Screenshots/demographics_page.png)  
-
----
-
-### 2️⃣ RFM Segmentation Page
-Shows Recency, Frequency, Monetary analysis, and customer segments.  
-
-![RFM Segmentation](Screenshots/rfm_page.png)  
-
----
-
-### 3️⃣ Customer Details Page
-Contains customer names, emails, and segment info for actionable campaigns.  
-
-![Customer Details](Screenshots/customer_details_page.png)  
-
----
-
-### 4️⃣ Marketing Actions Page
-Visualizes recommended campaigns for Champions, At Risk, New, and About to Sleep segments.  
-
-![Marketing Actions](Screenshots/marketing_actions_page.png)  
-
----
 
 ## 🧮 Key DAX Measures
 
@@ -71,10 +42,18 @@ DIVIDE(ChurnedCustomers, TotalCustomers, 0)
 
 📝 Conclusion & Recommendations
 This project demonstrates the ability to analyze large datasets, uncover critical business insights, and drive actionable strategies. Key takeaways and recommendations:
+
 74% Churn Rate Identified: Highlights urgent retention challenges.
+
 High-Value Customers: 60% of total revenue comes from ages 55-74; Champions dominate frequency and monetary metrics.
+
+---
 Actionable Recommendations:
+
 Champions: VIP loyalty programs to retain top revenue drivers.
+
 At Risk: Automated win-back campaigns with personalized discounts.
+
 New Customers: Onboarding “Welcome Series” to increase second purchase rates.
+
 About to Sleep: Urgency messaging via email/SMS to prevent churn.
